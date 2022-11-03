@@ -8,8 +8,8 @@ namespace Mirror.Examples.NetworkRoom
         {
             if (!NetworkServer.active) return;
 
-            for (int i = 0; i < 10; i++)
-                SpawnReward();
+           // for (int i = 0; i < 10; i++)
+             //   SpawnReward();
         }
 
         internal static void SpawnReward()
