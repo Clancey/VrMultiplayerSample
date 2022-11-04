@@ -13,7 +13,7 @@ public class VRLocalPlayerSpawner : MonoBehaviour {
 #if VR
     public static bool ShouldUseVr = true;
 #else
-    public static bool ShouldUseVr = false;//  Application.isEditor;
+    public static bool ShouldUseVr = false;// Application.isEditor;
 #endif
 
 	void Start () {
@@ -75,7 +75,6 @@ public class VRLocalPlayerSpawner : MonoBehaviour {
             UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager.StartSubsystems();
         }
 
-        ShouldUseVr = UnityEngine.XR.Management.XRGeneralSettings.Instance.Manager.isInitializationComplete;
         Setup();
     }
 

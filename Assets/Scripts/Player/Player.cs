@@ -10,11 +10,8 @@ public class Player : NetworkBehaviour
 {
     public GameObject LocalVRPawn;
     public GameObject LocalPlayer;
-    static Player()
-    {
-        IsLocalVR = VRLocalPlayerSpawner.ShouldUseVr;
-    }
-    public static bool IsLocalVR = false;
+
+    public static bool IsLocalVR => VRLocalPlayerSpawner.ShouldUseVr;
     [SyncVar]
     public bool IsVr;
     public string DebugData;
@@ -38,7 +35,6 @@ public class Player : NetworkBehaviour
         {
 
             IsVr = true;
-            IsLocalVR = true;
         }
 
         if (IsVr)
