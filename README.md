@@ -12,3 +12,9 @@ When you launch the game on a desktop, you can use the following command line op
  * HTV Vive Input Utility
  * Mirror
  * Third Person Sample
+
+
+## TODO
+* Work on mobile build configuration
+* Add remote network pairing
+* Plenty more things?
